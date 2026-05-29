@@ -12,5 +12,5 @@ RATIONALE: Minimalizing data exposure; to authenticate, we don't need ALL data f
 - `app.logger.info(f"the user '{username}' logged in successfully {password}")` into `app.logger.info(f"the user '{username}' logged in successfully")`  
 RATIONALE: No need to log/display the password typed in; the user will know their password and/or can use recovery mechanisms if they forgot
 
-- app.logger.warning(f"the user '{ username }' failed to log in {password}") into `app.logger.warning(f"the user '{ username }' failed to log in")`  
+- `app.logger.warning(f"the user '{ username }' failed to log in {password}")` into `app.logger.warning(f"the user '{ username }' failed to log in")`  
 RATIONALE: No need to log/display the password typed in; the user will know their password and/or can use recovery mechanisms if they forgot
